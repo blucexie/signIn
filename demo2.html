@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style type="text/css">
+   
+    img {
+        vertical-align: top
+    }
+
+
+    a,
+    ul,
+    li {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    a {
+        text-decoration: none;
+        outline: none;
+    }
+
+    a,
+    button,
+    input {
+        -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+    }
+
+    input {
+        -webkit-appearance: none;
+        outline: none;
+    }
+
+    ul,
+    li {
+        list-style: none;
+    }
+
+    .clear {
+        clear: both
+    }
+
+    .clear:after {
+        clear: both;
+        display: table;
+        content: ''
+    }
+
+    .clearfix:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden
+    }
+
+    
+    body {
+       /*  background: #fff6ca; */
+        font-size: 16px;
+    }
+
+    .checkin {
+        width: 96%;
+        height: auto;
+        margin-left: 2%;
+       /*  background: #fbb224; */
+        border: 10px solid #fff;
+        border-radius: 15px;
+        margin-top: 20px;
+        float: left;
+        box-sizing: border-box;
+        box-shadow: 0px 8px 5px #e3dbb4;
+    }
+
+    .tit {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        /* background: #fbae23; */
+        background: url("img/titBg.png")no-repeat;
+        background-size: 9.24rem .906667rem;
+        border-radius: 10px;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        border: 1px solid #fee783;
+        box-shadow: 0px 0px 2px #9a590a;
+        font-weight: bold;
+    }
+
+    .tit img {
+        width: 18px;
+        height: auto;
+        position: absolute;
+        top: 0;
+        margin-top: -24px;
+    }
+
+    .week,
+    .calendarList {
+        width: 100%;
+        float: left;
+       /*  margin-left: 2.5%; */
+       /*  margin-bottom: 15px; */
+    }
+    .week{
+        background: #feebe4;
+    }
+    .week li {
+        float: left;
+        width: 14.2%;
+        font-size: 18px;
+        color: #fbb224;
+        /* background: #91550c; */
+        padding: 2% 0;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+    }
+
+    .calendarList li {
+        width: 13.6%;
+        float: left;
+       
+        text-align: center;
+        height: 32px;
+        line-height: 32px;
+       /*  background: #fcc252; */
+       /*  border-radius: 3px; */
+        font-size: 14px;
+        color: #000;
+       /*  box-shadow: 0px 3px 2px #e9a121; */
+       border-left: 1px solid #eeeeee;
+       border-top: 1px solid #eeeeee;
+    }
+
+    .calendarList li.checked {
+        background: #fff url(images/checked.png) no-repeat center;
+        background-size: 20px auto;
+        background-position: center 96%;
+    }
+
+    .calendarList li:nth-child(7n) {
+        margin-right: 0;
+    }
+
+    .imgicon1 {
+        left: 20%;
+    }
+
+    .imgicon2 {
+        right: 20%;
+    }
+
+    .signrule {
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+        float: left;
+        margin-top: 15px;
+    }
+
+    .signrule h1 {
+        width: 96%;
+        padding-left: 4%;
+        height: 45px;
+        line-height: 45px;
+        color: #a05e0c;
+        font-size: 20px;
+        border-bottom: 1px dashed #a05e0c;
+        clear: both;
+        font-weight: 100;
+    }
+
+    .sign_detail {
+        width: 96%;
+        padding-left: 4%;
+        height: 250px;
+        overflow: auto;
+    }
+
+    .sign_detail p {
+        width: 100%;
+        line-height: 32px;
+        font-size: 16px;
+        color: #a05c0c;
+    }
+
+    .sign_detail p span {
+        color: #ff0000;
+        font-size: 16px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="checkin">
+        <div class="tit">2018年<span id="now_month"></span>月</div>
+        <ul class="week">
+            <li>日</li>
+            <li>一</li>
+            <li>二</li>
+            <li>三</li>
+            <li>四</li>
+            <li>五</li>
+            <li>六</li>
+        </ul>
+        <ul class="calendarList">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+       
+    </div>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+         var curDateTime = new Date();
+    var nowYear = curDateTime.getFullYear(); //年
+    var nowMonth = curDateTime.getMonth(); //月（从0开始）
+    var nowDay = curDateTime.getDate(); //日
+    var nowDayOfWeek = curDateTime.getDay(); //星期几 (0 ~ 6)
+    var datamap = [1, 2, 3]; //签到的日期(默认从0开始)     
+    var monthFirst = new Date(nowYear, nowMonth, 1).getDay(); //获取当月的第一天是星期几
+    
+    var lastmonthfianlday = new Date(nowYear, nowMonth, 0).getDate(); //获取上个月的最后一天是几号
+    var d = new Date(nowYear, (nowMonth + 1), 0) //当月最后一天
+    var totalDay = d.getDate(); //获取当前月的天数
+    var li = $(".calendarList li");
+  
+    for (var i = 0; i < totalDay; i++) {
+        li.eq(i + monthFirst).html(i + 1);
+           /*  for (var j = 0; j < datamap.length; j++) {
+            if (i == datamap[j]) {
+               
+                li.eq(i + monthFirst).addClass('checked');
+            }
+        } */
+        
+
+    }
+   
+    for (var m = monthFirst - 1; m >= 0; m--, lastmonthfianlday--) {
+        li.eq(m).html(lastmonthfianlday).css("color", "#fff");
+    }
+    var dd = 1;
+    var allday = totalDay + monthFirst;
+    for (var n = allday; n < li.length; n++, dd++) {
+        li.eq(n).html(dd).css("color", "#fff");
+    }
+
+    $("#now_month").html(nowMonth + 1);
+
+ $('#btn').click(function(){
+        for (var i = 0; i < totalDay; i++) {
+            if(i === nowDay){
+                li.eq(i+monthFirst-1).addClass('checked');
+                return;
+            }
+        }
+    })
+        //var d=new Date(2017,4,1) ==> Mon May 01 2017 00:00:00 GMT+0800 (中国标准时间) 2017年的5月1号
+        //var a=new Date(2017,4,0) ==> Sun Apr 30 2017 00:00:00 GMT+0800 (中国标准时间) 2017年4月30号
+        //c = new Date(2017, 5, 0) ==>Wed May 31 2017 00:00:00 GMT+0800 (中国标准时间)   2017年5月31号
+    </script>
+</body>
+</html>

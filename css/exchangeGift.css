@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+    width: 100%;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header{
+    width: 100%;
+    height: 6.48rem;
+    background: url(../img/giftBg.png)no-repeat;
+    background-size: 100%;
+    padding-top: 0.1px;
+    border-bottom: .266667rem solid #f8f8f8;
+}
+.header-top{
+    margin-top: .453333rem;
+}
+.header-top span{
+      float: right;
+      background: #fdbda9;
+      color: #da412d;
+      font-size: .346667rem;
+      padding: .133333rem .16rem .133333rem .266667rem; 
+      border-top-left-radius:.333333rem; 
+      border-bottom-left-radius:.333333rem; 
+}
+.header-center p{
+    text-align: center;
+    color: #fff;
+}
+.fraction{
+    font-size: 2.666667rem;
+    line-height: 2.666667rem;
+}
+.header-center p span:nth-of-type(2){
+    font-size: .48rem;
+}
+.header-bottom{
+    text-align: center;
+    margin-top: 1.066667rem;
+}
+.header-bottom span{
+    position: relative;
+    font-size: .4rem;
+    color: #fff;
+}
+.header-bottom span:before{
+    content: "";
+    display: block;
+    width: 3.253333rem;
+    height: 1px;
+    background: #fbb1a6;
+    position: absolute;
+    left: -3.68rem;
+    top: .266667rem;
+}
+.header-bottom span:after{
+    content: "";
+    display: block;
+    width: 3.253333rem;
+    height: 1px;
+    background: #fbb1a6;
+    position: absolute;
+    right: -3.68rem;
+    top: .266667rem;
+}
+/* .integralCard ul li img{
+    width: 4.293333rem;
+    height: 2.76rem;
+} */
+.exchange{
+    text-align: center;
+}
+.exchange>p{
+    position: relative;
+    font-size: .4rem;
+    color: #333;
+    margin: .88rem 0 .666667rem .666667rem;
+    text-align: left;
+}
+.exchange>p:before{
+    content: "";
+    display: block;
+    width: .133333rem;
+    height: .4rem;
+    background: #00adb4;
+    position: absolute;
+    top: .08rem;
+    left: -.293333rem;
+}
+.integralCard{
+    display: flex;
+    justify-content: center;
+}
+.integralCard p{
+    float: left;
+    width: 4.293333rem;
+    height: 2.76rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: .426667rem;
+}
+.integralCard p:nth-of-type(1){
+    background: url(../img/integralCard1.png)no-repeat;
+    background-size: 4.293333rem 2.76rem;
+    margin-right: .48rem;
+}
+.integralCard p:nth-of-type(2){
+    background: url(../img/integralCard2.png)no-repeat;
+    background-size: 4.293333rem 2.76rem;
+}
+.exchange>button{
+    width: 6.293333rem;
+    height: 1.133333rem;
+    line-height: 1.133333rem;
+    background: #fff;
+    color: #ff4b4a;
+    font-size: .4rem;
+    outline: none;
+    border: 1px solid #ff4b4a;
+    border-radius: 7.226667rem;
+    margin-top: 1.466667rem
+}
+.exchange>button img{
+    width: .213333rem;
+    height: .293333rem;
+}
+/*遮罩*/
+.shade {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+    z-index: 9000;
+  }
+/* success */
+.success{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left:-3.573333rem;
+    width: 7.146667rem;;
+    height: 10.626667rem;
+    background: url(../img/signInImg.png)no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+    text-align: center;
+}
+.success p{
+    text-align: center;
+}
+.success p:nth-of-type(1){
+    margin-top:6.666667rem;
+    font-size: .373333rem;
+    color: #999;
+}
+.success p:nth-of-type(2){
+    margin-top: .533333rem;
+    font-size: .533333rem;
+    font-weight: bold;
+    color: #fc7464;
+}
+.success img{
+    width: 3.413333rem;
+    margin-top:.733333rem;
+}

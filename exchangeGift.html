@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>兑换礼品</title>
+    <link rel="stylesheet" href="css/exchangeGift.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top clearfix">
+                <span>积分明细</span>
+            </div>
+            <div class="header-center">
+                <p>
+                    <span class="fraction">160</span> 
+                    <span>分</span>
+                </p>
+            </div>
+            <div class="header-bottom">
+                <span>当前积分</span>
+            </div>
+        </div>
+        <div class="exchange">
+            <p>可兑换的积分卡</p>
+            <div class="integralCard clearfix">
+                <p>100元积分卡</p>
+                <p>100元积分卡</p>
+            </div>
+            <button>
+               去做任务，兑换更多积分卡
+               <img src="img/rightArrow.png" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="success animated">
+        <p>本月已签到<span>30</span>天</p>
+        <p>恭喜你，已获得<span>30</span>积分</p>
+        <img src="img/signInBtn.png" alt="">
+    </div>
+     <!--遮罩-->
+     <div class="shade">
+        </div>
+    <script>
+       /*  $('.exchange button').click(function(){
+            $('.shade').show();
+            $('.success').addClass("bounceInDown").show();
+        }) */
+    </script>
+</body>
+</html>

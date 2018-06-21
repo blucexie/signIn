@@ -98,23 +98,22 @@
     display: flex;
     justify-content: center;
 }
-.integralCard p{
+.integralCard>div{
     float: left;
-    width: 4.293333rem;
-    height: 2.76rem;
+    width: 4.853333rem;
+    height: 3.32rem;
     line-height: 1.8rem;
     text-align: center;
     color: #fff;
     font-size: .426667rem;
 }
-.integralCard p:nth-of-type(1){
+.integralCard>div:nth-of-type(1){
     background: url(../img/integralCard1.png)no-repeat;
-    background-size: 4.293333rem 2.76rem;
-    margin-right: .48rem;
+    background-size: 4.853333rem 3.32rem;
 }
-.integralCard p:nth-of-type(2){
+.integralCard>div:nth-of-type(2){
     background: url(../img/integralCard2.png)no-repeat;
-    background-size: 4.293333rem 2.76rem;
+    background-size: 4.853333rem 3.32rem;
 }
 .exchange>button{
     width: 6.293333rem;

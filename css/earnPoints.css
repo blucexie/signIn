@@ -23,8 +23,8 @@
 }
 .dailyTasks h3,.newbieTask h3{
     position: relative;
-    height: 1.306667rem;
-    line-height: 1.306667rem;
+    line-height:.426667rem;
+    padding: 0.4rem;
     border-bottom:1px solid #ededed;
     font-size: .426667rem;
     color: #333;
@@ -74,18 +74,27 @@
     margin-left: .253333rem;
     margin-right: .093333rem;
 }
-.dailyTasks>div button,.newbieTask>div button{
+.dailyTasks>div button:nth-of-type(1),.newbieTask>div button:nth-of-type(1){
     width: 1.76rem;
     height: .733333rem;
-    line-height: .733333rem;
     background: #fa754c;
     color: #fff;
     border: none;
+    outline: none;
     border-radius: .4rem;
     margin-left:auto;
     margin-right: .4rem;
 }
-
+.dailyTasks>div button:nth-of-type(2),.newbieTask>div button:nth-of-type(2){
+    width: 1.76rem;
+    height: .733333rem;
+    border: none;
+    border-radius: .4rem;
+    margin-left:auto;
+    margin-right: .4rem;
+    color: #ffffff;
+    background-color: #ddd;
+}  
 .dailyTasks>div>div span img,.newbieTask>div>div span img{
      width: .4rem;
      height: .4rem;
